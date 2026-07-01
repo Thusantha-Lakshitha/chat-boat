@@ -1,0 +1,21 @@
+# Dependencies
+node_modules/
+scratch/node_modules/
+package-lock.json
+scratch/package-lock.json
+
+# Scratch files
+scratch/*.txt
+scratch/check_pdf.py
+scratch/check_pages.js
+scratch/check_exports.js
+scratch/check_instance.js
+scratch/check_constructor.js
+scratch/test_node.js
+scratch/find_occurrences.js
+scratch/find_process.js
+scratch/package.json
+scratch/server.js
+scratch/extract_pdf_classic.js
+scratch/extract_pdf_info.js
+scratch/build_index.js

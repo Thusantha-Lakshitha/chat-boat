@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>UoK Campus Assistant — University of Kelaniya</title>
+  <meta name="description" content="AI-powered campus assistant for the University of Kelaniya, Sri Lanka. Get directions, find departments, and explore campus services.">
+  <meta name="theme-color" content="#0A0A0F">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-wrapper">
+
+    <!-- ===== HEADER ===== -->
+    <header class="app-header" id="appHeader">
+      <div class="header-logo">
+        <span>UoK</span>
+      </div>
+      <div class="header-info">
+        <h1 class="header-title" id="headerTitle">UoK Campus Assistant</h1>
+        <div class="header-subtitle">
+          <span class="status-dot"></span>
+          <span>University of Kelaniya • Online</span>
+        </div>
+      </div>
+      <div class="header-actions">
+        <!-- Language Toggle -->
+        <div class="lang-toggle" id="langToggle">
+          <button class="lang-option active" data-lang="en" id="langEn">EN</button>
+          <button class="lang-option" data-lang="si" id="langSi">සිං</button>
+        </div>
+      </div>
+    </header>
+
+    <!-- ===== CHAT AREA ===== -->
+    <div class="chat-container" id="chatContainer">
+
+      <!-- Welcome Card -->
+      <div class="welcome-card" id="welcomeCard">
+        <span class="welcome-icon">🎓</span>
+        <h2 class="welcome-title" id="welcomeTitle">Welcome to UoK Campus Assistant</h2>
+        <p class="welcome-text" id="welcomeText">
+          I can help you navigate the campus, find departments, locate services, and answer your questions about the University of Kelaniya.
+        </p>
+      </div>
+
+    </div>
+
+    <!-- ===== QUICK REPLIES ===== -->
+    <div class="quick-replies" id="quickReplies">
+      <!-- Quick reply buttons will be injected here -->
+    </div>
+
+    <!-- ===== TYPING INDICATOR ===== -->
+    <div class="typing-indicator" id="typingIndicator">
+      <div class="message-avatar" style="background: linear-gradient(135deg, #7B1A2C, #9E2B40); box-shadow: 0 0 12px rgba(123,26,44,0.3);">🤖</div>
+      <div class="typing-bubble">
+        <div class="typing-dot"></div>
+        <div class="typing-dot"></div>
+        <div class="typing-dot"></div>
+      </div>
+    </div>
+
+    <!-- ===== INPUT AREA ===== -->
+    <div class="input-area" id="inputArea">
+      <div class="input-wrapper">
+        <textarea
+          class="chat-input"
+          id="chatInput"
+          placeholder="Ask me about campus..."
+          rows="1"
+          aria-label="Type your message"
+        ></textarea>
+        <button class="send-btn" id="sendBtn" disabled aria-label="Send message">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
